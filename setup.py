@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-from setuptools import setup, find_packages
+from setuptools import find_packages
+from distutils.core import setup
+from catkin_pkg.python_setup import generate_distutils_setup
 
 VERSION = '1.0.0'
 
-setup(
+setup_args = generate_distutils_setup(
     name='hyperion-graph-vis',
     packages=find_packages(),
 
@@ -26,3 +28,5 @@ setup(
     include_package_data=True,
     zip_safe=False
 )
+
+setup(**setup_args)
