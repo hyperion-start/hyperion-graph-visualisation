@@ -23,7 +23,7 @@ It enables using the ```visual``` mode when validating a configuration.
 ### Validation mode
 
 ```
-hyperion --config systems/demo.yaml validate [-h] [--visual]
+hyperion validate --config systems/demo.yaml [-h] [--visual]
 
 optional arguments:
   -h, --help  show this help message and exit
